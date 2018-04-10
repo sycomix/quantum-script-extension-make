@@ -1,0 +1,163 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build - Release - Win64 MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd win64",
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Build - Release - Win32 MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd win32",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Build - Release - Ubuntu On Windows",
+            "type": "shell",
+            "command": "bash.exe -- build.ubuntu.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build - Release - Ubuntu",
+            "type": "shell",
+            "command": "/bin/sh -- build.ubuntu.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build - Debug - Win64 MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd win64 debug",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Build - Debug - Win32 MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd win32 debug",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Build - Debug - Ubuntu On Windows",
+            "type": "shell",
+            "command": "bash.exe -- build.ubuntu.sh debug",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build - Debug - Ubuntu",
+            "type": "shell",
+            "command": "/bin/sh -- build.ubuntu.sh debug",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Clean - MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd clean",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+	    {
+            "label": "Clean - Ubuntu On Windows",
+            "type": "shell",
+            "command": "bash.exe -- build.ubuntu.sh clean",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Clean - Ubuntu",
+            "type": "shell",
+            "command": "/bin/sh -- build.ubuntu.sh clean",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Version - Win64 MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd win64 version",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Version - Win32 MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd win32 version",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Version - Ubuntu On Windows",
+            "type": "shell",
+            "command": "bash.exe -- build.ubuntu.sh version",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Version - Ubuntu",
+            "type": "shell",
+            "command": "/bin/sh -- build.ubuntu.sh version",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Install - Win64 MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd win64 install",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Install - Win32 MSVC",
+            "type": "shell",
+            "command": "cmd.exe /c build.msvc.cmd win32 install",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Install - Ubuntu On Windows",
+            "type": "shell",
+            "command": "bash.exe -- build.ubuntu.sh install",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Install - Ubuntu",
+            "type": "shell",
+            "command": "/bin/sh -- build.ubuntu.sh install",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
