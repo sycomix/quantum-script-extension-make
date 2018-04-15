@@ -18,11 +18,9 @@ FILE_TO_CS=$XYO_PATH_REPOSITORY/bin/file-to-cs.elf
 XYO_CC=$XYO_PATH_REPOSITORY/bin/xyo-cc.elf
 
 XLIB_STATIC=""
-XLIB_STATIC="$XLIB_STATIC --use-project=libxyo-core.static"
 XLIB_STATIC="$XLIB_STATIC --use-project=libquantum-script.static"
 
 XLIB=""
-XLIB="$XLIB --use-project=libxyo-core"
 XLIB="$XLIB --use-project=libquantum-script"
 
 if ! $FILE_TO_CS --touch=source/quantum-script-extension-make.cpp --file-in=source/quantum-script-extension-make.js --file-out=source/quantum-script-extension-make.src --is-string --name=extensionMakeSource ; then

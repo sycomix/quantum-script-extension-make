@@ -38,11 +38,9 @@ set FILE_TO_CS=%XYO_PATH_REPOSITORY%\bin\file-to-cs.exe
 set XYO_CC=%XYO_PATH_REPOSITORY%\bin\xyo-cc.exe
 
 set XLIB_STATIC= 
-set XLIB_STATIC= %XLIB_STATIC% --use-project=libxyo-core.static
 set XLIB_STATIC= %XLIB_STATIC% --use-project=libquantum-script.static
 
 set XLIB= 
-set XLIB= %XLIB% --use-project=libxyo-core
 set XLIB= %XLIB% --use-project=libquantum-script
 
 echo ^> begin build ^<
