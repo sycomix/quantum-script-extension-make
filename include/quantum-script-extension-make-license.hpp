@@ -7,8 +7,8 @@
 // MIT License (MIT) <http://opensource.org/licenses/MIT>
 //
 
-#ifndef QUANTUM_SCRIPT_EXTENSION_MAKE_LICENCE_HPP
-#define QUANTUM_SCRIPT_EXTENSION_MAKE_LICENCE_HPP
+#ifndef QUANTUM_SCRIPT_EXTENSION_MAKE_LICENSE_HPP
+#define QUANTUM_SCRIPT_EXTENSION_MAKE_LICENSE_HPP
 
 #ifndef QUANTUM_SCRIPT_EXTENSION_MAKE__EXPORT_HPP
 #include "quantum-script-extension-make--export.hpp"
